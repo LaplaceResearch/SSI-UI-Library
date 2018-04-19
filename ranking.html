@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Widget with reorderable drag-and-drop lists, jQuery Survey Library Example</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <link href="https://surveyjs.azureedge.net/1.0.18/survey.css" type="text/css" rel="stylesheet"/>
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div id="surveyElement"></div>
+                <div id="surveyResult"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <a class="complete" href="#">Complete</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://surveyjs.azureedge.net/1.0.18/survey.jquery.js"></script>
+    <script src="https://unpkg.com/sortablejs@1.7.0/Sortable.js"></script>
+    <script src="https://unpkg.com/surveyjs-widgets"></script>
+
+    <style>
+        .sv_complete_btn, .complete {display: none}
+    </style>
+
+    <script type="text/javascript">
+        var json = {
+            "elements": [
+            {
+                "type": "sortablelist",
+                "name": "lifepriopity",
+                "title": "Life Priorities",
+                "isRequired": true,
+                "choices": ["Turkcell", "Vodafone", "Turk Telekom"]
+            }
+        ]};
+
+        window.survey = new Survey.Model(json);
+
+        survey
+        .onComplete
+        .add(function (result) {
+            console.log(result)
+        });
+
+        survey.onValueChanged.add(function(a,b){
+
+        })
+
+        survey.showCompletedPage = false;
+
+        $("#surveyElement").Survey({model: survey});
+
+    </script>
+
+</body>
+</html>
