@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
-    <link href="https://surveyjs.azureedge.net/1.0.18/survey.css" type="text/css" rel="stylesheet"/>
+    <style>
+        .question_body {
+            display: none;
+        }
 
+    </style>
 </head>
 <body>
 
@@ -142,19 +144,21 @@
         <input type="hidden" name="hid_row_list_S6" value="1,2,3,4">
 
         <input type="hidden" name="hid_col_list_S6" value="1,2,3,4,5">
+
     </div>
 </div>
 
 </div>
 
-<script src="https://unpkg.com/jquery"></script>
-<script src="https://surveyjs.azureedge.net/1.0.18/survey.jquery.js"></script>
-<script src="../lib/gridSingle.js"></script>
-
+<script src="//unpkg.com/jquery"></script>
+<script src="//surveyjs.azureedge.net/1.0.18/survey.jquery.js"></script>
+<link href="//surveyjs.azureedge.net/1.0.18/survey.css" type="text/css" rel="stylesheet"/>
+<script src="https://cdn.rawgit.com/LaplaceResearch/SSI-UI-Library/41432681/lib/girdSingle.js"></script>
 
 <script>
     $('.question_body').gridSingle({
-        show_choice_labels: true
+        show_choice_labels: true,
+        theme: 'darkrose'
     });
 </script>
 

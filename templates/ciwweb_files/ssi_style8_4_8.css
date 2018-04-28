@@ -1,0 +1,1518 @@
+html, body
+{
+	margin: 0px; /* Removing browser default 10px margin. */
+	font-family: verdana, helvetica, arial, san-serif;
+}
+
+/*This is to preload any images so that they will already be loaded when needed*/
+#preload_images
+{
+	background: url('radiobutton_selected.png') no-repeat -9999px -9999px,
+				url('checkbox_selected.png') no-repeat -9999px -9999px,
+				url('green_checkbox_selected.png') no-repeat -9999px -9999px,
+				url('red_checkbox_selected.png') no-repeat -9999px -9999px;
+	width: 0;
+	height: 0;
+}
+
+.page
+{
+	padding-top: 1px;  /*This helps to avoid nested collapsing margins*/
+	padding-bottom: 1px;  /*This helps to avoid nested collapsing margins*/
+	width: 900px;
+	margin: 0px auto 0px auto;
+	background-color: #ffffff;
+}
+
+/*This is needed for IE to not put any space around the "form" element*/
+form
+{
+	margin: 0px;
+}
+
+.page_header, .question, .page_footer
+{
+	margin: 10px;
+}
+
+.page_footer
+{
+	text-align: center;
+	padding: 5px;
+	font-size: .8em;
+}
+
+.header1, .header2, .question_body, .footer
+{
+	padding: 5px;
+}
+
+.question
+{
+	padding: 5px;
+}
+
+.indent
+{
+	margin-left: 20px;
+}
+
+.submit_div
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.submit_div input
+{
+	padding: 2px 3px 2px 3px;
+}
+
+#previous
+{
+	margin-right: 10px;
+}
+
+#next, #previous
+{
+	display: inline;
+}
+
+#previous form, #next form
+{
+	display: inline;
+}
+
+.graphical_next_button, .graphical_previous_button
+{
+	width: 40px;
+	height: 40px;
+	display:-moz-inline-stack; /*Firefox 2.0 hack*/
+	display:inline-block;
+	cursor:pointer;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	border-width: 0px;
+}
+
+.graphical_next_button
+{
+	background:url('next.png') no-repeat center center; 
+}
+
+.graphical_previous_button
+{
+	background:url('previous.png') no-repeat center center; 
+}
+
+.progress_bar
+{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 13px;
+	position: relative;
+	vertical-align: middle;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-bottom: 10px;
+}
+
+.progress_bar_outer
+{
+	background-color: #AFAFAF;
+	width: 100%;
+	height: 10px;
+	text-align: left; /*This is for Opera*/
+}
+
+.progress_bar_inner
+{
+	background-color: #0D58A6;
+	margin-left: 0px;
+	margin-right: auto;
+	height: 10px;
+	font-size: 5px;
+}
+
+.progress_bar_table
+{
+	width: 100%;
+}
+
+.progress_bar_table .left_cell
+{
+	text-align: right;
+	vertical-align: middle;
+	width: 5%;
+}
+
+.progress_bar_table .middle_cell
+{
+	text-align: center;
+	vertical-align: middle;
+	width: 90%;
+}
+
+.progress_bar_table .right_cell
+{
+	text-align: left;
+	vertical-align: middle;
+	width: 5%;
+}
+
+td, table
+{
+	border-color: #6A6A6A;
+}
+
+.select_column_spacing
+{
+	padding-left: 20px;
+}
+
+#sawtooth_logo
+{
+	border: solid 2px #D1D1D1; 
+	padding-left:5px; 
+	padding-right:5px; 
+	width:300px;
+	padding-top: 2px; 
+	padding-bottom: 2px; 
+	letter-spacing: 2px; 
+	font-family: arial; 
+	font-size: 12px;
+	background-color: #ffffff;
+	color: #6A6A6A;
+	margin: 100px auto 100px auto;
+	text-align: center;
+}
+
+.total
+{
+	background-color: #c0c0c0;
+}
+
+.consum_total_row table
+{
+	padding-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table
+{
+	border-collapse: collapse;
+}
+
+.input_cell
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.password .input_cell
+{
+	text-align: left;
+}
+
+.password .inner_table td
+{
+	padding-left: 0px;
+}
+
+.acarating .row_label_cell, .grid .row_label_cell, .password .row_label_cell
+{
+	text-align: right;
+}
+
+.acaimportance .row_label_cell
+{
+	text-align: center;
+}
+
+.acapair .level_text_cell
+{
+	text-align: center;
+}	
+
+.acarating .anchor_text_cell, .acaimportance .anchor_text_cell, .acapair .anchor_text_cell, .cva .anchor_text_cell, .cbcrating .anchor_text_cell
+{
+	text-align: center;
+	font-size: 12px;
+}
+
+.inner_table td
+{
+	padding: 5px;
+}
+
+.inner_table .other_specify_table td
+{
+	padding: 0px;
+}
+
+.inner_table .other_specify_row .input_cell
+{
+	vertical-align: middle;
+}
+
+.inner_table table .input_cell, .freeformat .input_cell
+{
+	vertical-align: top;
+	padding: 5px;
+}
+
+.inner_table table .option_cell 
+{
+	vertical-align: middle;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-right: 5px;
+}
+
+.inner_table table .multiline_other_cell 
+{
+	padding-top: 6px;
+}
+
+.constantsum .inner_table table .input_cell, .constantsum .inner_table table .option_cell,
+.ranking .inner_table table .input_cell, .ranking .inner_table table .option_cell
+{
+	padding-top: 10px;
+	padding-right: 5px;
+}
+
+.numeric input, .openend input
+{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.acapair_table
+{
+	margin-bottom: 10px;
+}
+
+.acapair .or_header
+{
+	text-align: center;
+}
+
+.acacalibration .single_concept
+{
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.acacalibration .inner_table td
+{
+	text-align: center;
+}
+
+/* CBC settings */
+
+.dual_response_none
+{
+	padding: 3px;
+}
+
+.cbc .dual_response_none .input_cell
+{
+	padding-right: 0px;
+	padding-top: 0px;
+}
+
+.cbc .dual_response_none td
+{
+	padding: 3px;
+}
+
+.cbc .cbc_totals_box
+{
+	margin-top: 10px;
+	text-align: right;
+}
+
+.cbc .cbc_totals_box input
+{
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.cbc .level_text_cell
+{
+	vertical-align: top;
+}
+
+.cbc .none_option
+{
+	vertical-align: middle;
+
+	height: 50px;
+}
+
+.cbc .row_label_cell, .cbc .row_input_label_cell, .cbcrating .row_label_cell
+{
+	text-align: right;
+	vertical-align: top;
+}
+
+.cbc .shelf_display .row_label_cell, 
+.cbc .shelf_display .row_input_label_cell
+{
+	padding-right: 5px;
+}
+
+
+.cbc .default_display .row_label_cell, 
+.cbc .default_display .level_text_cell, 
+.cbc .default_display .row_input_label_cell, 
+.cbc .default_display .input_cell,
+.cbc .default_display .labels_above_input .concept_label_cell,
+.cbc .default_display .labels_above_input .top_corner_label_cell
+{
+	border-left-width: 1px; 
+	border-left-style: solid;
+}
+
+.cbc .default_display .level_text_cell,
+.cbc .default_display .labels_above_input .concept_label_cell,
+.cbc .default_display .labels_above_input .top_corner_label_cell,
+.cbc .default_display .input_cell
+{
+	border-right-width: 1px; 
+	border-right-style: solid;
+}
+
+.cbc .default_display .cbc_top_row .level_text_cell, 
+.cbc .default_display .cbc_top_row .row_label_cell,
+.cbc .default_display .row_input_label_cell,
+.cbc .default_display .input_cell
+{
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+.cbc .default_display .first_input_row .input_cell, 
+.cbc .default_display .first_input_row .row_input_label_cell,
+.cbc .default_display .labels_above_input .concept_label_cell,
+.cbc .default_display .labels_above_input .top_corner_label_cell
+{
+	border-top-width: 2px; 
+	border-top-style: solid;
+}
+
+.cbc .default_display .input_cell, 
+.cbc .default_display .row_input_label_cell
+{
+	border-bottom-width: 1px; 
+	border-bottom-style: solid;
+}
+
+.cbc .concept_label_cell
+{
+	text-align: center;
+}
+
+.cbc .input_cell
+{
+	text-align: center;
+}
+
+.cbc .inner_table
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cbc .dual_response_none table
+{
+	padding: 5px;
+}
+
+.cbc .shelf_display .level_text_cell
+{
+	vertical-align: bottom;
+}
+
+.cbc .shelf_display .cbc_shelf .shelf_cell
+{
+	background-color: #c0c0c0;	
+}
+
+.cbc .shelf_display .cbc_top_row .shelf_cell
+{
+	border-bottom: 3px solid #000000;	
+	padding: 0px;
+}
+
+.cbc .shelf_display .cbc_bottom_row .shelf_cell
+{
+	border-bottom: 1px solid #000000;	
+	text-align: center;
+}
+
+.cbc .shelf_display td
+{
+	padding: 2px;
+}
+
+.cbc_best_row .best_worst_graphics .radiobox 
+{
+	background:url('checkbox_unselected.png') no-repeat center center;
+}
+
+.cbc_best_row .best_worst_graphics .radioboxselected 
+{
+	background:url('green_checkbox_selected.png') no-repeat center center; 
+}
+
+.cbc_worst_row .best_worst_graphics .radiobox 
+{
+	background:url('checkbox_unselected.png') no-repeat center center;
+}
+
+.cbc_worst_row .best_worst_graphics .radioboxselected 
+{
+	background:url('red_checkbox_selected.png') no-repeat center center; 
+}
+
+.cbc .top_corner_label_cell, .cbc .bottom_corner_label_cell
+{
+	text-align: right;
+}
+
+.cbc .concept_labels_row td
+{
+	vertical-align: bottom;
+}
+
+.cbc .cell_between_concepts
+{
+	padding: 0px;
+}
+
+.cbc .spacer_between_concepts
+{
+	width: 20px;
+}
+
+.cbc .cell_between_rows
+{
+	padding: 0px;
+	height: 20px;
+}
+
+.cbcrating .anchor_text_cell.last_col
+{
+    border-left: 10px solid #ffffff;
+}
+
+.cbcrating .input_cell.last_col
+{
+    border-left: 10px solid #ffffff;
+	background-color: rgba(0,0,0,.07); 
+}
+
+
+
+/* CVA */
+
+.cva .or_header_cell
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.cva .row_label_cell
+{
+	text-align: right;
+	vertical-align: top;
+}
+
+.cva .input_cell
+{
+	text-align: center;
+}
+
+.cva .single_concept
+{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cva .single_concept .level_text
+{
+	text-align: center;
+}
+
+.cva .single_concept .input_row_cell
+{
+	text-align: center;
+}
+
+/* MaxDiff */
+
+.maxdiff .inner_table
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Include just the table to fix a weird bug in Firefox*/
+.maxdiff .inner_table td, .maxdiff .inner_table
+{
+	border-width: 1px; 
+	border-style: solid;
+}
+
+.maxdiff .best_input_cell, .maxdiff .worst_input_cell
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.maxdiff .item_text_cell
+{
+	text-align: center;
+	width: auto;
+}
+
+.maxdiff .item_text_cell td
+{
+	border-style: none !important;
+}
+
+.maxdiff .best_header, .maxdiff .worst_header, .maxdiff .items_header
+{
+	text-align: center;
+}
+
+.maxdiff .best_header td, .maxdiff .worst_header td, .maxdiff .items_header td
+{
+	border-style: none !important;
+}
+
+.maxdiff .dual_response_anchor
+{
+	margin-top: 30px;
+}
+
+.maxdiff .dual_response_anchor td
+{
+	padding: 4px 0px 4px 2px;
+}
+
+.maxdiff .dual_response_anchor .question_text
+{
+	margin-bottom: 5px;
+}
+
+
+
+/* ACBC */
+.panel_table td /*Do not include .acbc_byo, because it makes it too specific and overrides settings above.*/
+{
+	padding: 5px;
+}
+
+.acbc_byo .task_center_panel_cell
+{
+	padding: 0px;
+}
+
+.acbc_byo .attributes_header_cell, .acbc_byo .levels_header_cell, .acbc_byo .price_header_cell
+{
+	text-align: center;
+}
+
+.acbc_byo_price_box
+{
+	width: 70px;
+	background-color: #cccccc;
+}
+
+.acbc_byo .task_left_panel_cell, .acbc_byo .task_right_panel_cell
+{
+	vertical-align: top;
+}
+
+.acbc_byo .task_center_panel_cell
+{
+	text-align: center;
+	vertical-align: top;
+}
+
+.acbc_byo .acbc_proh_error
+{
+	border: 1px solid red;
+}
+
+.acbc_byo .acbc_price_change_warning td
+{
+	background-color: yellow;
+}
+
+.acbc_byo .label_text_cell, .acbc_byo .level_text_cell, .acbc_byo .price_cell, .acbc_screener .label_text_cell, .acbc_screener .options_cell,
+.acbc_screener .level_text_cell, .acbc_unacceptable .center_panel_cell, .acbc_unacceptable .body_text_cell,
+.acbc_musthave .center_panel_cell, .acbc_musthave .body_text_cell, .acbc_choicetask .label_text_cell, .acbc_choicetask .options_cell,
+.acbc_choicetask .level_text_cell
+{
+	vertical-align: top;
+	text-align: left;
+}
+
+.acbc_byo .price_cell
+{
+	text-align: center;
+}
+
+.acbc_byo .price_cell td
+{
+	padding: 0px 2px 0px 2px;
+	vertical-align: middle;
+	border-width: 0px !important; 
+}
+
+.acbc_byo .level_text_cell select
+{
+	width: 100%;
+}
+
+.acbc_rules img
+{
+	vertical-align: text-top;
+}
+
+/* This style is needed for IE and Firefox to look the same */
+.acbc_previous_rules ul
+{
+	margin-top:0px; 
+	margin-bottom:0px;
+}
+
+.acbc_common_level
+{
+	background-color: #c0c0c0 !important;
+}
+
+.acbc_calibration_options 
+{
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.acbc_calibration .combo_input_cell
+{
+	text-align: center;
+}
+
+.acbc_calibration .inner_table
+{
+	width: 500px;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.acbc_byo .attributes_header_cell, .acbc_byo .levels_header_cell, .acbc_byo .price_header_cell, .acbc_byo .total_label_cell
+{
+	font-weight: bold;
+}
+
+.acbc_byo .total_label_cell
+{
+	text-align: right;
+}
+
+.acbc_byo .inner_table td, .acbc_screener .inner_table td, .acbc_choicetask .inner_table td, .acbc_calibration .inner_table td
+{
+	border-left-width: 1px; 
+	border-left-style: solid;
+}
+.acbc_byo .inner_table, .acbc_screener .inner_table, .acbc_choicetask .inner_table, .acbc_calibration .inner_table
+{
+	border-right-width: 1px; 
+	border-right-style: solid;
+}
+.acbc_byo .acbc_task_top_row td, .acbc_screener .acbc_task_top_row td, .acbc_choicetask .acbc_task_top_row td, .acbc_calibration .acbc_task_top_row td
+{
+	border-top-width: 1px; 
+	border-top-style: solid;
+}
+.acbc_byo .acbc_task_bottom_row td, .acbc_screener .acbc_task_bottom_row td, .acbc_choicetask .acbc_task_bottom_row td, .acbc_calibration .acbc_task_bottom_row td
+{
+	border-top-width: 2px; 
+	border-top-style: solid;
+}
+.acbc_byo .inner_table, .acbc_screener .inner_table, .acbc_choicetask .inner_table, .acbc_calibration .inner_table
+{
+	border-bottom-width: 1px; 
+	border-bottom-style: solid;
+}
+
+.acbc_byo .acbc_byo_options td, .acbc_screener .acbc_screener_options td, .acbc_calibration .acbc_calibration_options td
+{
+	border-width: 0px !important; 
+	border-style: solid;
+}
+
+.acbc_screener_options
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Grid */
+.grid .col_label_cell
+{
+	text-align: center;
+	vertical-align: bottom;
+}
+
+.grid .input_cell
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.grid .input_cell textarea
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.grid_cell_label_table td
+{
+	padding: 0px;
+	vertical-align: middle;
+	border-style: none !important;
+}
+
+.grid_cell_label_table
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alt_color1
+{
+	background-color: #BBD6EF;	
+}
+
+.alt_color2
+{
+	background-color: #EFF7FF;	
+}
+
+.text_input, .numeric_input
+{
+	padding: 4px;
+}
+
+.openend textarea
+{
+	width: 700px;
+	height: 100px;
+	padding: 3px;
+	margin: 2px;
+}
+
+.options textarea
+{
+	width: 300px;
+	height: 50px;
+	padding: 3px; 
+	margin: 2px;
+}
+
+.grid textarea
+{
+	width: 150px;
+	height: 50px;
+	margin-top: 2px;
+	margin-left: 2px;
+	display: block;
+}
+
+.open_end_text_box
+{
+	width: 170px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.grid .open_end_text_box
+{
+	width: 130px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.row_label_cell .grid_options textarea
+{
+	margin-left: auto;
+	margin-right: 0px;
+}
+
+.col_label_cell .grid_options textarea
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.grid_options td
+{
+	border-style: none !important;
+}
+
+.ranking textarea, .constantsum textarea
+{
+	display: block;
+}
+
+.semanticdiff .left_label_cell
+{
+	text-align: right;
+}
+
+.semanticdiff .right_label_cell
+{
+	text-align: left;
+}
+
+.semanticdiff .column_header_row td
+{
+	text-align: center;
+}
+
+.semanticdiff .anchor_table td
+{
+	border-width: 0px !important; 
+	border-style: solid;
+}
+
+.simple_browser_close
+{
+	text-align: right;
+}
+
+/*Use this to hide elements*/
+.HideElement
+{
+	display: none;
+}
+
+.ShowElement
+{
+	display: block;
+}
+
+.checkbox, .checkboxselected, .radiobox, .radioboxselected
+{
+	cursor:pointer;
+	margin-left: auto;
+	margin-right: auto;
+	width:20px;
+	height:20px;
+}
+
+.checkbox 
+{
+	background:url('checkbox_unselected.png') no-repeat center center; 
+}
+
+.checkboxselected 
+{
+	background:url('checkbox_selected.png') no-repeat center center; 
+}
+
+.radiobox 
+{
+	background:url('radiobutton_unselected.png') no-repeat center center;
+}
+
+.radioboxselected 
+{
+	background:url('radiobutton_selected.png') no-repeat center center;
+}
+
+/*The td below is for ACBC BYO to display highlight over prohibition and price adjustment colors */
+.highlight, .highlight td
+{
+	background-color: #CDCDCD !important;
+}
+
+.clickable, .highlight, label
+{
+	cursor:pointer;
+}
+
+.page_break
+{
+	page-break-after:always; 
+	margin-top: 10px; 
+	margin-bottom: 20px;
+}
+
+.page_break_text
+{
+	color:#000000; 
+	text-align:center; 
+	font-family: verdana, arial, helvetica, san-serif;	
+	font-size: 10px;
+	width: 100%; 
+	background-color: #ACA899; 
+	border-top: 2px solid #000000; 
+	border-bottom: 1px solid #000000;
+}
+
+@media print
+{
+	.page_break_text
+	{
+		display:none;
+	}
+}
+
+.test_label
+{
+	line-height: 20px;
+	position: relative;
+	margin: 3px; 
+	padding: 3px; 
+	width: 10px; 
+	font-size: 12px; 
+	letter-spacing: .05em; 
+	font-family: verdana, arial, helvetica, san-serif;
+	background-color:#FFFFFF; 
+	color:#000000;
+	border: dashed 1px #336688; 
+	display: none;
+}
+
+.print_study .test_label 
+{
+	border: dotted 2px #336688; 
+}
+
+.test_mode
+{
+	padding-top: 0px;
+}
+
+.test_mode #test_mode_header
+{
+	font-size: 15px; 
+	padding: 10px 20px 10px 20px; 
+	margin-bottom:20px; 
+	background-color:#F9EDBE;
+	color:#336688; 
+}
+
+.test_mode #test_mode_header #test_title
+{
+	font-weight: bold;
+}
+
+.test_mode #test_options_link
+{
+	float: right;
+}
+
+.test_link, .test_link:visited
+{
+	color: #336688;
+}
+
+#close_test_options_link
+{
+	margin-left: 27px;
+}
+
+.test_mode .test_mode_menu td
+{
+	padding: 8px;
+}
+
+.test_mode .test_options_title
+{
+	font-weight: bold;
+	margin: 0 0 20px 0;
+}
+
+.test_mode .test_options_row
+{
+	margin-bottom: 10px;
+}
+
+.test_mode .test_section_header
+{
+	font-size: 1em; 
+	margin: 15px 0 5px 0px;
+}
+
+.test_mode .test_option_note
+{
+	font-size: .8em; 
+	margin: 0 0 20px 20px;
+}
+
+.test_mode.show_names .test_question_label, 
+.test_mode.show_vars .test_var_label
+{
+	display: inline;
+}
+
+#test_options_box
+{
+	padding: 10px;
+	margin:0 0 0 1px;
+	border:1px solid #d2d4d5;
+    position: absolute;
+    z-index: 9999;
+    background-color: white;
+    text-align: left;
+    right: 25px;
+    display: none;
+    top: 45px;
+    float: right;
+	width: 400px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 20px #000;
+	font: 18px/28px Arial, Helvetica, sans-serif;
+}
+
+#test_options_box::before 
+{
+    content: "";
+	width: 0;
+	height: 0;
+	border: 0.8em solid transparent;
+	position: absolute;
+	left: 91%;
+	top: -20px;
+	border-bottom: 10px solid #fff;
+}
+
+#page_submit_msg
+{
+	display: none;
+}
+
+.new_tooltip  
+{
+  position: absolute;
+  width:240px;
+  color: #000000;
+  height: 50px;
+  line-height: 1.4em;
+  text-align: center;
+  border-radius: 6px;
+  margin: -30px 0 0 50px;
+  z-index: 999;
+  background: #F9EDBE;
+  border: 1px solid #F0C36D;
+  font-size: 1.3em;
+  padding: 5px;
+}
+
+.preview_note
+{
+	width:500px;
+	text-align:left;
+	padding:10px;
+	color: black;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: dotted 2px #336688; 
+}
+
+.quota_preview
+{
+	border: dotted 2px #336688; 
+	margin: 30px;
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.script_preview
+{
+	border: dashed 2px #336688; 
+	margin: 10px 5px 10px 5px;
+	background-color: white;
+	color: black;
+	padding: 3px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* Error messages */
+
+.error_quest_highlight
+{
+	border: 1px solid red !important;
+}
+
+.error_var_highlight
+{
+	border: 1px solid red !important;
+}
+
+.error_var_highlight_left
+{
+	border-left-style: solid;
+	border-left-color: red !important;
+	border-left-width: 1px;
+}
+
+.error_var_highlight_center
+{
+	border-top-style: solid;
+	border-top-color: red !important;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: red !important;
+	border-bottom-width: 1px;
+}
+
+.error_var_highlight_right
+{
+	border-right-style: solid;
+	border-right-color: red !important;
+	border-right-width: 1px;
+}
+
+.error_var_highlight_top
+{
+	border-top-style: solid;
+	border-top-color: red !important;
+	border-top-width: 1px;
+}
+
+.error_var_highlight_middle
+{
+	border-left-style: solid;
+	border-left-color: red !important;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-color: red !important;
+	border-right-width: 1px;
+}
+
+.error_var_highlight_bottom
+{
+	border-bottom-style: solid;
+	border-bottom-color: red !important;
+	border-bottom-width: 1px;
+}
+
+.error_messages
+{
+   color: red;
+   text-align: left;
+}
+
+.page_error, .server_verification_error
+{
+	font-weight: bold;
+	padding: 10px;
+	margin: 15px 0px 15px 0px;
+}
+
+.question_errors
+{
+	padding: 5px 5px 5px 10px;
+}
+
+.server_verification_error .question_errors
+{
+	padding: 0px 10px 10px 10px;
+}
+
+.question_error_box
+{
+	margin-bottom: 5px;
+}
+
+.tool_tip_link
+{
+	font-weight: bold;	
+}
+
+.tool_tip_link_mouseover
+{
+	text-decoration: underline;
+	cursor:default;
+}
+
+.tool_tip_text
+{
+	font-size: 12px;
+	width: 200px;
+	height: 60px;
+	border: 1px solid #7F7F7F;
+	background-color: #E6E6E6;
+	padding: 4px;
+	position: absolute;
+	z-index: 1000;
+	display: none;
+}
+
+/*Slider Style*/
+.ui-slider-horizontal .ui-slider-handle { top: -4px; margin-left: -10px; }
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
+/*Slider bar they are dragging on*/
+.ui-slider-horizontal
+{
+	border: 1px solid #D6D6D6;
+	height: 16px;
+	position: relative; 
+	text-align: left;
+	-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;
+}
+
+/*Needs to have both classes so that it is not overwritten by jquery-ui style*/
+.slider_control .ui-slider-handle
+{ 
+	position: absolute; 
+	z-index: 2;
+	width: 22px;
+	height: 22px;
+
+	-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;
+}
+
+.slider_continuous_scale 
+{
+	margin: 0px 10px 0px 10px;
+}
+
+.slider_tool_tip
+{ 
+	border: 1px solid #c0c0c0;
+	height:20px; 
+	width:38px; 
+	overflow:hidden; 
+	position:absolute; 
+	top:-28px;
+	-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;
+
+	text-align:center;
+	font-weight:bold;
+	color:#202020;
+	background-color: white;
+}
+
+.semanticdiff .radio_slider .input_cell
+{
+	padding: 0px !important; 
+	width: 0px !important;
+}
+
+.semanticdiff .radio_slider .input_cell input
+{
+	margin: 0px;
+}
+
+.debug_box
+{
+	margin: 20px 0px 20px 0px;
+}
+
+.debug_box table
+{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.debug_box td
+{
+	text-align: left;
+}
+
+.debug_header
+{
+	background-color: #FF9900;
+}
+
+.debug_section
+{
+	background-color: #c3c3c3;
+}
+
+#submit_overlay
+{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
+#submit_progress_bar
+{
+	background-color: white;
+	z-index: 11;
+	width: 40px;
+	height: 35px;
+	padding: 8px 5px 5px 5px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -20px;
+	text-align: center;
+	border-radius: 3px;
+}
+
+
+.acbc_byo .conditional_att
+{
+	display: none;
+}
+
+/*Modifications to preview mode for C2*/
+.c2_preview
+{
+	background-color: white;
+}
+
+.c2_preview .page
+{
+	width: 100% !important;
+	border: 0 solid white;
+	margin: 0;
+}
+
+.c2_preview .question
+{
+	margin: 0;
+}
+/*end C2*/
+
+/*Start mobile style*/
+@media only screen and (max-width: 800px) 
+{
+	body 
+	{
+		font-size: 14px;
+		margin: 0;              /* Amount of negative space around the outside of the body */
+		padding: 0;             /* Amount of negative space around the inside of the body */
+	}
+
+	.question, .page_error, .submit_div
+	{
+		margin-left: 3px;
+		margin-right: 3px;
+		width: auto;
+		padding: 3px;
+	}
+
+	.question_body
+	{
+		padding: 0px;
+	}
+
+	.page
+	{
+		width: 100%;
+	}
+
+	#invisible_submit
+	{
+		display: none;
+	}
+
+	.graphical_next_button, .graphical_previous_button
+	{
+		width: 70px;
+		height: 50px;
+	}
+
+	.button_highlight
+	{
+		background-color: #e2e2e2;
+	}
+
+	.page_header
+	{
+		margin: 0px;
+		font-size: 20px;
+		text-align: center;
+		width: auto;
+		line-height: 1.3em;
+	}
+
+	.page_footer
+	{
+		width: auto;
+	}
+
+	.openend textarea
+	{
+		width: 100%;
+	}
+
+	.options textarea
+	{
+		width: 100%px;
+	}
+
+	.grid textarea
+	{
+		width: 100%;
+	}
+
+	.text_box
+	{
+		width: 100%px;
+	}
+
+	.grid .text_box
+	{
+		width: 100%;
+	}
+
+	.indent
+	{
+		margin-left: 0px;
+	}
+
+	/*For text boxes and combo boxes*/
+	input, select
+	{
+		font-size: 20px;
+	}
+
+	.progress_bar
+	{
+		width: 90%;
+	}
+
+	.cbc .spacer_between_concepts
+	{
+		width: 0px;
+	}
+}
+
