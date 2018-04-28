@@ -5,7 +5,7 @@ SSI UI Library
 
 ### Grid Single
 
-![grid-single](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![grid-single](https://github.com/LaplaceResearch/SSI-UI-Library/raw/master/screenshots/grid-single.png)
 
     <script src="//unpkg.com/jquery"></script>
     <script src="//surveyjs.azureedge.net/1.0.18/survey.jquery.js"></script>
@@ -22,7 +22,7 @@ SSI UI Library
 
 ### Checkbox
 
-![checkbox](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![checkbox](https://github.com/LaplaceResearch/SSI-UI-Library/raw/master/screenshots/checkbox.png)
 
     <link rel="stylesheet" type="text/css" href="//unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/LaplaceResearch/SSI-UI-Library/0e0c05b9/lib/checkbox.css">
