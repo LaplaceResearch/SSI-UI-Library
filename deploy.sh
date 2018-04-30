@@ -3,16 +3,18 @@
 CDN=deployer@165.227.146.133
 PROJECT=laplaceresearch/ssi-ui-library
 
-PROJECT_PATH="/home/deployer/cdn/$PROJECT"
+CDFOLDER="cd /home/deployer/cdn/$PROJECT"
 PULL="git pull"
 NGINX="sudo service nginx reload"
 
 
 if [ "$1" = "pack" ]; then
     ssh -t $CDN "$CDFOLDER && $PULL"
+fi
 
 if [ "$1" = "nginx" ]; then
     ssh -t $CDN "$CDFOLDER && $PULL && $NGINX"
+fi
 
 if [ -z "$1" ]; then
     echo
