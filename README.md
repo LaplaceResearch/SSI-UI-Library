@@ -30,7 +30,23 @@ SSI UI Library
     <script src="//unpkg.com/jquery"></script>
     <script src="//unpkg.com/underscore"></script>
     <script src="//unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="//cdn.rawgit.com/LaplaceResearch/SSI-UI-Library/0e0c05b9/lib/checkbox.js"></script>
+    <script type="text/javascript" src="//rawgit.com/LaplaceResearch/SSI-UI-Library/master/lib/radio.css"></script>
     <script>
         $('.question_body').checkbox();
+    </script>
+
+
+### Radio
+
+<img src="https://github.com/LaplaceResearch/SSI-UI-Library/raw/master/screenshots/radio.png" width="480">
+
+    <link rel="stylesheet" type="text/css" href="//unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//rawgit.com/LaplaceResearch/SSI-UI-Library/master/lib/radio.css">
+
+    <script src="//unpkg.com/jquery"></script>
+    <script src="//unpkg.com/underscore"></script>
+    <script src="//unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//rawgit.com/LaplaceResearch/SSI-UI-Library/master/lib/radio.js"></script>
+    <script>
+        $('.question_body').radio();
     </script>
