@@ -53,6 +53,7 @@
 .funkyradio input[type="radio"]:hover:not(:checked) ~ label,
 .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
   color: #888;
+  padding: 0px 0px 0px 41px;
 }
 
 .funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
