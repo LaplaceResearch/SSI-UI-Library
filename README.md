@@ -50,3 +50,11 @@ SSI UI Library
     <script>
         $('.question_body').radio();
     </script>
+
+
+### Textarea
+
+<img src="http://cdn.kurigo.com/laplaceresearch/ssi-ui-library/screenshots/textarea.png" width="480">
+
+    <link rel="stylesheet" type="text/css" href="http://cdn.kurigo.com/laplaceresearch/ssi-ui-library/lib/textarea.css">
+    <script type="text/javascript" src="http://cdn.kurigo.com/laplaceresearch/ssi-ui-library/lib/textarea.js"></script>

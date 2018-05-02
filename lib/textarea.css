@@ -1,0 +1,44 @@
+.textarea-bubble {
+    box-sizing: content-box;
+    z-index: 2;
+    width: 80%;
+    height: auto;
+    position: relative;
+    padding: 2px 6px 3px 2px;
+    border: none;
+    border-radius: 10px;
+    text-overflow: ellipsis;
+    background: #BFBFBF;
+    margin-top: 30px;
+}
+
+.textarea-bubble::before {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    border: none;
+    font: normal 16px/normal "Times New Roman", Times, serif;
+    color: rgba(0,0,0,0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #BFBFBF;
+    text-shadow: none;
+    -webkit-transform: rotateZ(-14.32394487827058deg)  translateX(-5px) skewX(-36deg);
+    transform: rotateZ(-14.32394487827058deg)  translateX(-5px) skewX(-36deg);
+}
+
+.openend .textarea-bubble textarea {
+    width: 100%;
+    background: white;
+    border: 0px;
+    resize: none;
+    border-radius: 8px;
+    outline: none;
+}
