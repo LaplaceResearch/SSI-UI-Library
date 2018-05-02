@@ -10,6 +10,8 @@
     text-overflow: ellipsis;
     background: #BFBFBF;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .textarea-bubble::before {
@@ -48,8 +50,8 @@
     content: "";
     position: absolute;
     background-color: #BFBFBF;
-    -webkit-mask-image: url(/assets/icons/icon_edit.svg);
-    mask-image: url(/assets/icons/icon_edit.svg);
+    -webkit-mask-image: url(../assets/icons/icon_edit.svg);
+    mask-image: url(../assets/icons/icon_edit.svg);
     width: 20px;
     height: 25px;
     top: 7px;
