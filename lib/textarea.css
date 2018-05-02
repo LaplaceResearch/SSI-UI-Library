@@ -36,9 +36,23 @@
 
 .openend .textarea-bubble textarea {
     width: 100%;
-    background: white;
     border: 0px;
     resize: none;
     border-radius: 8px;
     outline: none;
+    position: relative;
+    padding-left: 30px;
+}
+
+.openend .textarea-bubble::after {
+    content: "";
+    position: absolute;
+    background-color: #BFBFBF;
+    -webkit-mask-image: url(/assets/icons/icon_edit.svg);
+    mask-image: url(/assets/icons/icon_edit.svg);
+    width: 20px;
+    height: 25px;
+    top: 7px;
+    left: 8px;
+    background-size: 20px;
 }
