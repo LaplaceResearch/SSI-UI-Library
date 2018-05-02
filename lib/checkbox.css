@@ -10,6 +10,17 @@
   overflow: hidden;
 }
 
+.funkyradio label,
+.funkyradio input[type="radio"]:empty ~ label,
+.funkyradio input[type="radio"]:hover:empty ~ label,
+.funkyradio input[type="radio"]:hover:checked ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label,
+.funkyradio input[type="checkbox"]:hover:empty ~ label,
+.funkyradio input[type="checkbox"]:hover:checked ~ label {
+  padding: 0 0 0 41px;
+  display: inline-flex;
+}
+
 .funkyradio label {
   width: 100%;
   border-radius: 3px;
