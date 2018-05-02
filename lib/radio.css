@@ -13,6 +13,8 @@
 .funkyradio label {
   width: 100%;
   border-radius: 3px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   border: 1px solid #D1D3D4;
   font-weight: normal;
 }
@@ -45,7 +47,7 @@
   content: '';
   width: 2.5em;
   background: #D1D3D4;
-  border-radius: 3px 0 0 3px;
+  border-radius: 20px;
 }
 
 .funkyradio input[type="radio"]:hover:not(:checked) ~ label,
@@ -67,10 +69,12 @@
 
 .funkyradio input[type="radio"]:checked ~ label:before,
 .funkyradio input[type="checkbox"]:checked ~ label:before {
-  content: '\2714';
-  text-indent: .9em;
-  color: #333;
-  background-color: #ccc;
+    content: '\272D';
+    text-indent: 9px;
+    color: #333;
+    background-color: #ccc;
+    font-size: 22px;
+    width: 35px;
 }
 
 .funkyradio input[type="text"]{
