@@ -65,8 +65,8 @@ SSI UI Library
 <img src="http://cdn.kurigo.com/laplaceresearch/ssi-ui-library/screenshots/inputmask.png" width="480">
 
     <script src="//unpkg.com/jquery"></script>
-    <script src="/lib/vendor/jquery.inputmask.js"></script>
-    <script src="/lib/vendor/inputmask.date.extensions.js"></script>
+    <script src="http://cdn.kurigo.com/laplaceresearch/ssi-ui-library/lib/vendor/jquery.inputmask.js"></script>
+    <script src="http://cdn.kurigo.com/laplaceresearch/ssi-ui-library/lib/vendor/inputmask.date.extensions.js"></script>
 
     <script>
 
