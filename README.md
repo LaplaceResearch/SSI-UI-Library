@@ -58,3 +58,40 @@ SSI UI Library
 
     <link rel="stylesheet" type="text/css" href="http://cdn.kurigo.com/laplaceresearch/ssi-ui-library/lib/textarea.css">
     <script type="text/javascript" src="http://cdn.kurigo.com/laplaceresearch/ssi-ui-library/lib/textarea.js"></script>
+
+
+### Input Mask
+
+<img src="http://cdn.kurigo.com/laplaceresearch/ssi-ui-library/screenshots/inputmask.png" width="480">
+
+    <script src="//unpkg.com/jquery"></script>
+    <script src="/lib/vendor/jquery.inputmask.js"></script>
+    <script src="/lib/vendor/inputmask.date.extensions.js"></script>
+
+    <script>
+
+        // Email Mask
+        $("input[name*='email']").inputmask({
+            mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
+            greedy: false,
+            onBeforePaste: function (pastedValue, opts) {
+                pastedValue = pastedValue.toLowerCase();
+                return pastedValue.replace("mailto:", "");
+            },
+            definitions: {
+                '*': {
+                    validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~\-]",
+                    casing: "lower"
+                }
+            }
+        });
+
+        // Phone Mask
+        $("input[name*='evtel'], input[name*='ceptel']").inputmask({"mask": "0 (999) 999 99 99"});
+
+        // Date Mask
+        // Requires inputmask.date.extensions.js
+        $("input[name*='tarih']").inputmask({alias: "datetime", inputFormat: "dd/mm/yyyy"});
+
+
+    </script>
