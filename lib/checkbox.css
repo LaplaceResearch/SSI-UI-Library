@@ -18,6 +18,10 @@
   display: inline-flex;
 }
 
+.funkycheck input {
+  line-height: 1;
+}
+
 .funkycheck label {
   width: 100%;
   border-radius: 3px;
