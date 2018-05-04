@@ -18,6 +18,10 @@
   display: inline-flex;
 }
 
+.funkyradio input {
+  line-height: 1;
+}
+
 .funkyradio label {
   width: 100%;
   border-radius: 3px;
