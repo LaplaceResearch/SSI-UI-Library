@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <form name="mainform" onSubmit="SSI_SubmitMe(); return false;" method="post" action="ciwweb.pl?hid_s=Af8AAKM5Kjywolp8IdoziMwPnockAAAAkxUfC4WTbk0T4gOk9COvspEMGgiGm2hFDegfuOB49_1v9ebwfG6WsO0W_0S6fa62">
+    <form name="mainform" onSubmit="SSI_SubmitMe(); return false;" method="post" action=".">
 
         <div class="page" id="page">
             <input type="hidden" name="hid_backup" value="wizvr01,2,575141280,19,1">
@@ -151,9 +151,17 @@
     <script src="//unpkg.com/underscore"></script>
     <script src="//unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/lib/radio.js"></script>
+
     <script>
+
         $('.question_body').radio();
+
+        $('#next_button').click(function(){
+            $('form').submit()
+        });
+
     </script>
+
 
 
 </body>
