@@ -55,6 +55,7 @@
   left: 0;
   content: '';
   width: 2.5em;
+  height: 35px;
   background: #D1D3D4;
   border-radius: 20px;
 }

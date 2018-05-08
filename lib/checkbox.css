@@ -55,8 +55,10 @@
   left: 0;
   content: '';
   width: 2.5em;
+  height: 35px;
   background: #D1D3D4;
   border-radius: 3px 0 0 3px;
+
 }
 
 .funkycheck input[type="checkbox"]:hover:not(:checked) ~ label {
