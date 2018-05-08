@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Document</title>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
     <style>
@@ -153,11 +155,12 @@
 <script src="//unpkg.com/jquery"></script>
 <script src="//surveyjs.azureedge.net/1.0.18/survey.jquery.js"></script>
 <link href="//surveyjs.azureedge.net/1.0.18/survey.css" type="text/css" rel="stylesheet"/>
-<script src="https://cdn.rawgit.com/LaplaceResearch/SSI-UI-Library/41432681/lib/girdSingle.js"></script>
+<script src="/lib/girdSingle.js"></script>
+<link href="/lib/surveyjs.custom.css" type="text/css" rel="stylesheet"/>
 
 <script>
     $('.question_body').gridSingle({
-        show_choice_labels: true,
+        show_choice_labels: false,
         theme: 'darkrose'
     });
 </script>

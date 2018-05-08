@@ -11,6 +11,7 @@ SSI UI Library
     <script src="//surveyjs.azureedge.net/1.0.18/survey.jquery.js"></script>
     <link href="//surveyjs.azureedge.net/1.0.18/survey.css" type="text/css" rel="stylesheet"/>
     <script src="http://cdn.kurigo.com/laplaceresearch/ssi-ui-library/lib/girdSingle.js"></script>
+    <link href="http://cdn.kurigo.com/laplaceresearch/ssi-ui-library/lib/surveyjs.custom.css" type="text/css" rel="stylesheet"/>
 
     <script>
         $('.question_body').gridSingle({

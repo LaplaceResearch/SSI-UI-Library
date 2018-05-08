@@ -1,0 +1,9 @@
+.sv_main .sv_container .sv_body .sv_p_root .sv_q_rating .sv_q_rating_item .sv_q_rating_item_text {
+    display: inline-block;
+    min-width: 2em;
+    padding: 0 0.3em;
+    margin-left: -1px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2em;
+}
